@@ -1,4 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Footer } from "./Footer";
+import { faGem } from "@fortawesome/free-regular-svg-icons";
 export const Mine = () => {
   return (
     <div className="mine-part">
@@ -25,7 +27,15 @@ export const Mine = () => {
         </div>
         <div className="mine-coin">
           {/* <h3>hamcoins</h3> */}
-          <h2>100🪙</h2>
+          <h2>
+            100
+            <span>
+              <FontAwesomeIcon
+                icon={faGem}
+                style={{ color: "#1cf514", marginLeft: "0.2em" }}
+              />
+            </span>
+          </h2>
         </div>
         <div className="mine-clicker">
           <div className="second-mine-div">
