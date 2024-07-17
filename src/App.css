@@ -201,8 +201,8 @@
   }
 
   .second-mine-div {
-    width: 15em;
-    height: 14em;
+    width: 14em;
+    height: 13em;
     border: 1px solid #4c4e4d;
     border-radius: 50%;
     display: flex;
@@ -270,9 +270,15 @@
     height: 80%;
     box-shadow: 0 0 5px 5px #a6a4a2;
   }
-  .mine-part h1:nth-child(1) {
+
+  .invite-head {
+    text-transform: capitalize;
     margin-top: 1em;
     text-align: center;
+    font-family: "Karla", sans-serif;
+    color: white;
+    text-transform: capitalize;
+    font-size: 22px;
   }
 
   .invite-friends-box {
@@ -313,5 +319,48 @@
     background-color: #3d97cd;
     font-size: 20px;
     border-radius: 5px;
+  }
+
+  .invite-text h3 {
+    font-family: "Karla", sans-serif;
+    color: white;
+    text-transform: capitalize;
+  }
+
+  .invite-text p {
+    font-family: "Karla", sans-serif;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 1em;
+  }
+
+  .friend-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    align-items: center;
+  }
+
+  .friend-list h1 {
+    text-align: start;
+    font-family: "Karla", sans-serif;
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+
+  .no-friend-yet {
+    margin-top: 1em;
+    border: 1px solid #1cf514;
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  .no-friend-yet p {
+    font-family: "Karla", sans-serif;
+    color: #a6a4a2;
+    text-transform: capitalize;
   }
 }

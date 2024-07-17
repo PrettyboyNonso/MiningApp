@@ -27,7 +27,7 @@ export const Mine = () => {
         </div>
         <div className="mine-coin">
           {/* <h3>hamcoins</h3> */}
-          <h2>
+          <h2 style={{ fontSize: "30px" }}>
             100
             <span>
               <FontAwesomeIcon
