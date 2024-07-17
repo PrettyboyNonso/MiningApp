@@ -4,37 +4,58 @@ import {
   faHammer,
   faPeopleGroup,
 } from "@fortawesome/free-solid-svg-icons";
+import { faGift } from "@fortawesome/free-solid-svg-icons/faGift";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-export const Footer = () => {
+export const Footer = ({ setActiveNav, activeNav }) => {
   return (
     <div className="footer">
-      <div className="bottom-menu">
+      <div className="bottom-menu" onClick={() => setActiveNav("mine")}>
         <FontAwesomeIcon
           icon={faGem}
-          style={{ color: "white", fontSize: "22px" }}
+          style={{
+            color: activeNav === "mine" ? "#1cf514" : "white",
+            fontSize: "22px",
+          }}
         />
-        <p>mine</p>
+        <p style={{ color: activeNav === "mine" ? "#1cf514" : "white" }}>
+          mine
+        </p>
       </div>
-      <div className="bottom-menu">
+      <div className="bottom-menu" onClick={() => setActiveNav("bonus")}>
         <FontAwesomeIcon
-          icon={faHammer}
-          style={{ color: "white", fontSize: "22px" }}
+          icon={faGift}
+          style={{
+            color: activeNav === "bonus" ? "#1cf514" : "white",
+            fontSize: "22px",
+          }}
         />
-        <p>work</p>
+        <p style={{ color: activeNav === "bonus" ? "#1cf514" : "white" }}>
+          bonus
+        </p>
       </div>
-      <div className="bottom-menu">
+      <div className="bottom-menu" onClick={() => setActiveNav("invite")}>
         <FontAwesomeIcon
           icon={faPeopleGroup}
-          style={{ color: "white", fontSize: "22px" }}
+          style={{
+            color: activeNav === "invite" ? "#1cf514" : "white",
+            fontSize: "22px",
+          }}
         />
-        <p>invite</p>
+        <p style={{ color: activeNav === "invite" ? "#1cf514" : "white" }}>
+          invite
+        </p>
       </div>
-      <div className="bottom-menu">
+      <div className="bottom-menu" onClick={() => setActiveNav("tasks")}>
         <FontAwesomeIcon
           icon={faBriefcase}
-          style={{ color: "white", fontSize: "22px" }}
+          style={{
+            color: activeNav === "tasks" ? "#1cf514" : "white",
+            fontSize: "22px",
+          }}
         />
-        <p>tasks</p>
+        <p style={{ color: activeNav === "tasks" ? "#1cf514" : "white" }}>
+          tasks
+        </p>
       </div>
     </div>
   );

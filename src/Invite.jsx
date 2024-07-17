@@ -3,7 +3,7 @@ import { Footer } from "./Footer";
 import { faGem } from "@fortawesome/free-regular-svg-icons";
 import { faRotateLeft } from "@fortawesome/free-solid-svg-icons";
 
-export const Invite = () => {
+export const Invite = ({ setActiveNav, activeNav }) => {
   return (
     <div className="mine-part" style={{ paddingBottom: "4em" }}>
       <h1 className="invite-head">invite friends</h1>
@@ -62,7 +62,7 @@ export const Invite = () => {
         <p>you have not invited anyone</p>
       </div>
       <button className="invite-btn">invite</button>
-      <Footer />
+      <Footer setActiveNav={setActiveNav} activeNav={activeNav} />
     </div>
   );
 };
