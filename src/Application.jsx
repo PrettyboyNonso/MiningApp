@@ -8,9 +8,9 @@ export const Application = () => {
   return (
     <div className="application">
       <Header />
-      <Mine />
+      {/* <Mine /> */}
       {/* <Trade /> */}
-      {/* <Invite /> */}
+      <Invite />
     </div>
   );
 };

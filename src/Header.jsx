@@ -9,7 +9,7 @@ export const Header = () => {
         </div>
         <p>fortune obi</p>
       </div>
-      <div className="coin">
+      {/* <div className="coin">
         <FontAwesomeIcon
           icon={faGem}
           style={{
@@ -21,7 +21,7 @@ export const Header = () => {
           }}
         />
         <p>ton</p>
-      </div>
+      </div> */}
     </header>
   );
 };

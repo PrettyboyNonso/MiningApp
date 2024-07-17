@@ -5,7 +5,7 @@ import { faRotateLeft } from "@fortawesome/free-solid-svg-icons";
 
 export const Invite = () => {
   return (
-    <div className="mine-part">
+    <div className="mine-part" style={{ paddingBottom: "4em" }}>
       <h1 className="invite-head">invite friends</h1>
       <div className="invite-friends-box">
         <div className="invite-box">

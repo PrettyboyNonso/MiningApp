@@ -13,24 +13,28 @@ export const Footer = () => {
           icon={faGem}
           style={{ color: "white", fontSize: "22px" }}
         />
+        <p>mine</p>
       </div>
       <div className="bottom-menu">
         <FontAwesomeIcon
           icon={faHammer}
           style={{ color: "white", fontSize: "22px" }}
         />
+        <p>work</p>
       </div>
       <div className="bottom-menu">
         <FontAwesomeIcon
           icon={faPeopleGroup}
           style={{ color: "white", fontSize: "22px" }}
         />
+        <p>invite</p>
       </div>
       <div className="bottom-menu">
         <FontAwesomeIcon
           icon={faBriefcase}
           style={{ color: "white", fontSize: "22px" }}
         />
+        <p>tasks</p>
       </div>
     </div>
   );

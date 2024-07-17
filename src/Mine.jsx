@@ -4,6 +4,18 @@ import { faGem } from "@fortawesome/free-regular-svg-icons";
 export const Mine = () => {
   return (
     <div className="mine-part">
+      <div className="mine-coin">
+        <h3>hamcoins</h3>
+        <h2>
+          100
+          <span>
+            <FontAwesomeIcon
+              icon={faGem}
+              style={{ color: "#1cf514", marginLeft: "0.2em" }}
+            />
+          </span>
+        </h2>
+      </div>
       <div className="mine-dashboard">
         <div className="mine-level">
           <div className="level-name">
@@ -25,21 +37,10 @@ export const Mine = () => {
           </div>
           <div className="loading-bar">
             <p style={{ color: "white" }}> 1500/1500</p>
-            <div className="bar" style={{ backgroundColor: "#3d97cd" }}></div>
+            <div className="bar" style={{ backgroundColor: "#1cf514" }}></div>
           </div>
         </div>
-        <div className="mine-coin">
-          {/* <h3>hamcoins</h3> */}
-          <h2>
-            100
-            <span>
-              <FontAwesomeIcon
-                icon={faGem}
-                style={{ color: "#1cf514", marginLeft: "0.2em" }}
-              />
-            </span>
-          </h2>
-        </div>
+
         <div className="mine-clicker">
           <div className="second-mine-div">
             <div className="third-mine-div">
