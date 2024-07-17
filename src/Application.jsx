@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Header } from "./Header";
 import { Mine } from "./Mine";
 import { Trade } from "./Trade";
@@ -7,6 +7,7 @@ import { Task } from "./Tasks";
 
 export const Application = () => {
   const [activeNav, setActiveNav] = useState("mine");
+
   return (
     <div className="application">
       <Header />

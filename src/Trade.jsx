@@ -2,7 +2,7 @@ import { Footer } from "./Footer";
 
 export const Trade = ({ setActiveNav, activeNav }) => {
   return (
-    <div className="mine-part">
+    <div className="mine-part" style={{ paddingBottom: "4em" }}>
       <h2>daily bonus</h2>
       <div className="box-flex">
         <div className="boxes">

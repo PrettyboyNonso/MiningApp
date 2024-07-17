@@ -1,28 +1,27 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Footer } from "./Footer";
-import { faGem } from "@fortawesome/free-regular-svg-icons";
+import { LittleCoin } from "./LittleCoin";
+import { useEffect } from "react";
+import BiggerCoin from "./BiggerCoin";
 export const Mine = ({ setActiveNav, activeNav }) => {
+  const getPosition = (e) => {
+    console.log(e.target.getBoundingClientRect());
+    // console.log(e);
+  };
   return (
     <div className="mine-part">
-      <div className="mine-coin">
-        {/* <h3>hamcoins</h3> */}
-        <h2>
-          100
-          <span>
-            <FontAwesomeIcon
-              icon={faGem}
-              style={{ color: "white", marginLeft: "0.2em" }}
-            />
-          </span>
-        </h2>
+      <div className="mine-coin" onClick={(e) => getPosition(e)}>
+        <LittleCoin />
+        <h2>1,000</h2>
+        <p>newbie</p>
       </div>
       <div className="mine-dashboard">
         <div className="mine-level">
           <div className="level-name">
-            <p>grandmaster</p>
+            <p>newbie</p>
           </div>
           <div className="loading-bar">
-            <p style={{ fontWeight: "bold" }}>level 4/10</p>
+            <p style={{ fontWeight: "bold" }}>level 1/10</p>
             <div className="bar">
               <div className="second-bar"></div>
             </div>
@@ -30,7 +29,7 @@ export const Mine = ({ setActiveNav, activeNav }) => {
         </div>
         <div
           className="mine-level"
-          style={{ marginTop: "0.3em", fontWeight: "bold" }}
+          style={{ marginTop: "0em", fontWeight: "bold" }}
         >
           <div className="level-name">
             <p>boost 🚀</p>
@@ -40,14 +39,7 @@ export const Mine = ({ setActiveNav, activeNav }) => {
             <div className="bar" style={{ backgroundColor: "#1cf514" }}></div>
           </div>
         </div>
-
-        <div className="mine-clicker">
-          <div className="second-mine-div">
-            <div className="third-mine-div">
-              <img src={require("./Images/IMG_1719.PNG")} alt="" />
-            </div>
-          </div>
-        </div>
+        <BiggerCoin getPosition={getPosition} />
         <Footer setActiveNav={setActiveNav} activeNav={activeNav} />
       </div>
     </div>

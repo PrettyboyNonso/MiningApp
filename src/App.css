@@ -67,6 +67,22 @@
     color: white;
   }
 
+  .littlecoin {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    background-color: #4c4e4d;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+    padding: 0.5em;
+    margin-bottom: 0.3em;
+  }
+
+  .littlecoin img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #3d97cd;
+    border-radius: 50px;
+  }
   .coin {
     display: flex;
     background-color: #626364;
@@ -119,7 +135,7 @@
   .mine-level {
     display: flex;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 1.5em;
   }
 
   .mine-level .level-name {
@@ -166,7 +182,7 @@
     border-radius: 10px;
   }
   .loading-bar .second-bar {
-    width: 40%;
+    width: 10%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     height: 1em;
@@ -180,7 +196,13 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin-top: 0.5em;
+    margin-top: 0.8em;
+  }
+
+  .mine-coin p {
+    color: white;
+    text-transform: capitalize;
+    font-family: "Karla", sans-serif;
   }
 
   .mine-coin h3 {
@@ -195,7 +217,7 @@
     margin-top: 0.3em;
     font-family: "Karla", sans-serif;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .mine-clicker {
