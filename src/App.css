@@ -12,7 +12,7 @@
   .application {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: rgb(36, 36, 36);
     height: 100dvh;
   }
 
@@ -95,7 +95,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    box-shadow: 0 0 12px 5px #1cf514;
+    box-shadow: 0 0 12px 5px white;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
   }
@@ -187,7 +187,6 @@
     margin-top: 0em;
     font-family: "Karla", sans-serif;
     color: #1cf514;
-
     font-size: 20px;
   }
 
