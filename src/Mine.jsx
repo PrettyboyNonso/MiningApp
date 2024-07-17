@@ -10,13 +10,16 @@ export const Mine = () => {
             <p>grandmaster</p>
           </div>
           <div className="loading-bar">
-            <p>level 4/10</p>
+            <p style={{ fontWeight: "bold" }}>level 4/10</p>
             <div className="bar">
               <div className="second-bar"></div>
             </div>
           </div>
         </div>
-        <div className="mine-level" style={{ marginTop: "0.3em" }}>
+        <div
+          className="mine-level"
+          style={{ marginTop: "0.3em", fontWeight: "bold" }}
+        >
           <div className="level-name">
             <p>boost 🚀</p>
           </div>
@@ -27,7 +30,7 @@ export const Mine = () => {
         </div>
         <div className="mine-coin">
           {/* <h3>hamcoins</h3> */}
-          <h2 style={{ fontSize: "30px" }}>
+          <h2>
             100
             <span>
               <FontAwesomeIcon
